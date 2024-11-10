@@ -3,7 +3,7 @@
 //primera solución
 console.log('Hello World')
 //segunda solución
-const greeting ='Hello World'
+const greeting = 'Hello World'
 console.log(greeting)
 
 
@@ -81,4 +81,31 @@ function riseNumber1(numero) {
  }
  riseNumber1(4);  // Llamar a la función con un número como argumento 
 
-//9.
+//9. Crea una función que saque por consola el área de un rectángulo de dimensiones dadas como parámetro. (base, altura)
+function calcularAreaRectangulo(base, altura) {
+    const area = base * altura
+    console.log(area)
+} // Llamar a la función con las dimensiones del rectángulo
+calcularAreaRectangulo(5, 3) 
+
+//10. Crea una función que imprima por consola un número al azar entre 0 y 10
+function numeroAlAzar() { 
+    let numero = Math.floor(Math.random() * 11)
+    console.log(numero);
+} 
+numeroAlAzar();
+
+//11. Adivina el número y Crea una función que primero guarde en una variable un número aleatorio del 1 al 10. Después, pregunte al usuario a través de un prompt un número del 1 al 10. Una vez recibida la respuesta, compare estos dos números. Si los números coinciden, imprime por consola un string indicando que el usuario ha acertado, sino, imprime por consola que el usuario ha fallado seguido del número correcto.
+function adivinaElNumero() {
+    // Guardar un número aleatorio del 1 al 10 en una variable
+    const numeroAleatorio = Math.floor(Math.random() * 10) + 1
+    // Pedir al usuario que adivine un número del 1 al 10
+    const numeroUsuario = parseInt(prompt('Adivina el número (del 1 al 10):'))
+    // Comparar los números y mostrar el resultado 
+    if (numeroUsuario === numeroAleatorio) { 
+        console.log('¡Has acertado! El número era ' + numeroAleatorio); 
+    } 
+        else { 
+            console.log('Has fallado. El número correcto era ' + numeroAleatorio); }
+        } 
+    adivinaElNumero();
