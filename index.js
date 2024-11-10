@@ -109,3 +109,5 @@ function adivinaElNumero() {
             console.log('Has fallado. El número correcto era ' + numeroAleatorio); }
         } 
     adivinaElNumero();
+
+    //12.
